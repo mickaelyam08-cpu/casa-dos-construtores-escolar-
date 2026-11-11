@@ -1,0 +1,233 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Casa de Construtores</title>
+<style>
+  *, *::before, *::after { 
+    box-sizing: border-box; 
+    margin: 0; 
+    padding: 0; 
+  }
+  html { 
+    -webkit-text-size-adjust: 100%;
+   }
+  body {
+    font-family: Georgia, "Times New Roman", serif;
+    background: #fafaf8;
+    color: #222;
+    line-height: 1.7;
+    overflow-wrap: break-word;
+  }
+
+  /* Cabeçalho */
+  header {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    gap: 12px 24px;
+    padding: 20px ;
+    background: #1c1c1c;
+  }
+ .logo {
+    color: #c8ff00;
+    letter-spacing: 4px;
+    font-size: 15px;
+    text-transform: uppercase;
+  }
+  
+  nav { 
+    margin-left: auto;
+    display: flex; 
+    flex-wrap: wrap; 
+    gap: 4px 28px; 
+  }
+  nav a {
+    color: #fff;
+    text-decoration: none;
+    font-size: 12px;
+    letter-spacing: 0.2em;
+    text-transform: uppercase;
+    padding: 10px 0;
+  }
+
+  nav a:hover {   
+    color: #71881d;
+   }
+
+
+  .btnO {
+    display: inline-block;
+    margin-top: 16px;
+    padding: 14px 32px;
+    background: #1c1c1c;
+    color: #c8ff00;
+    text-decoration: none;
+    letter-spacing: 0.1em;
+    border-radius: 4px;
+    border: 0;
+    font: inherit;
+    cursor: pointer;
+  }
+  .btnO:hover { 
+    background: #000;
+   }
+
+  .box {
+    width: 92%;
+    margin: 25px auto ;
+    padding: 80px 40px;
+    background: #fff;
+    border: 1px solid #e6e6e1;
+    border-radius: 8px;
+    box-shadow:  2px 12px rgba(0, 0, 0, 0.06);
+  }
+
+  h1 { 
+    line-height: 1.2;
+    margin-bottom: 8px;
+     }
+  h2 { 
+     line-height: 1.3;
+     margin: 48px 0 16px;
+     }
+  .subT { 
+    font-size: 18px; 
+    font-style: italic; 
+    color: #555; 
+    margin-bottom: 24px;
+   }
+  p { 
+    margin-bottom: 16px;
+   }
+  ul, ol { 
+    margin: 0 0 16px 24px; 
+  }
+  li { 
+    margin-bottom: 8px;
+   }
+  .servicos { 
+    columns: 2; 
+    column-gap: 40px;
+   }
+  .servicos li { 
+    break-inside: avoid;
+   }
+  .destaque { 
+    font-weight: bold
+   }
+  hr { 
+    border: 0;
+    border-top: 1px solid #e6e6e1; 
+    margin: 48px 0; 
+      }
+  .final { 
+    text-align: center;
+   }
+  .final h2 { 
+    margin-top: 0;
+    letter-spacing: 5px;
+     }
+
+  @media (max-width: 700px) {
+    .servicos { columns: 1; }
+    h2 { 
+      margin-top: 36px;
+     }
+    hr {
+      margin: 36px 0;
+     }
+  }
+  @media (max-width: 600px) {
+    nav { 
+      margin-left: 0; 
+      width: 100%; 
+    }
+    .final .btnO { 
+      display: block;
+      text-align: center;
+    }
+  }
+</style>
+</head>
+<body>
+
+<header>
+  <div class="logo">Casa dos Construtores</div>
+  <nav>
+    <a href="sobre.html">Sobre nós</a>
+    <a href="contato.html">Fale conosco</a>
+  </nav>
+</header>
+
+<main class="box">
+
+  <h1>Casa de Construtores</h1>
+  <p class="subT">Seu projeto começa aqui. Sua realização é o nosso compromisso!</p>
+
+  <p>Construir, reformar ou transformar um ambiente é muito mais do que realizar uma obra: é tirar sonhos do papel, criar novas possibilidades e construir o futuro que você deseja.</p>
+  <p>Na Casa de Construtores, entendemos que cada projeto tem sua importância e que encontrar profissionais de confiança pode ser um grande desafio. Por isso, nosso objetivo é facilitar sua vida, conectando você às soluções certas para todos os tipos de serviços relacionados à construção civil.</p>
+  <p>Seja uma pequena reforma, uma construção completa, uma manutenção ou um projeto de grande porte, estamos preparados para ajudar você a encontrar o caminho ideal para transformar suas ideias em realidade.</p>
+
+  <h2>Tudo o que você precisa em um só lugar!</h2>
+  <p>Não importa o tamanho do seu projeto. A Casa de Construtores busca oferecer soluções para diferentes necessidades, proporcionando mais praticidade, organização e tranquilidade.</p>
+  <p>Nossos serviços incluem:</p>
+  <ul class="servicos">
+    <li>Construção de casas e imóveis.</li>
+    <li>Reformas residenciais e comerciais.</li>
+    <li>Serviços de pedreiro e ajudante.</li>
+    <li>Serviços de pintura e acabamento.</li>
+    <li>Instalações elétricas e hidráulicas.</li>
+    <li>Serviços de encanamento.</li>
+    <li>Instalação de pisos e revestimentos.</li>
+    <li>Construção e manutenção de telhados.</li>
+    <li>Gesso, drywall e forros.</li>
+    <li>Serviços de marcenaria.</li>
+    <li>Jardinagem e áreas externas.</li>
+    <li>Demolição e preparação de terrenos.</li>
+    <li>Manutenção e reparos em geral.</li>
+  </ul>
+  <p>E muito mais! Nossa proposta é ajudar você a encontrar soluções para diferentes etapas da sua obra.</p>
+
+  <h2>Por que escolher a Casa de Construtores?</h2>
+  <p>Sabemos que contratar um serviço exige confiança. Afinal, você está investindo seu dinheiro, seu tempo e, muitas vezes, realizando um sonho.</p>
+  <p>Por isso, queremos tornar essa experiência mais simples e acessível.</p>
+  <ul>
+    <li><span class="destaque">Praticidade:</span> encontre soluções para diferentes necessidades da construção em um só lugar.</li>
+    <li><span class="destaque">Variedade:</span> conte com possibilidades para pequenos reparos, reformas e grandes construções.</li>
+    <li><span class="destaque">Facilidade:</span> economize tempo na busca por profissionais e serviços.</li>
+    <li><span class="destaque">Comprometimento:</span> valorizamos cada projeto e buscamos soluções que atendam às necessidades dos nossos clientes.</li>
+  </ul>
+
+  <h2>Seu projeto não precisa esperar!</h2>
+  <p>Quantas vezes você já adiou uma reforma por não saber por onde começar? Ou deixou de realizar uma melhoria por dificuldade em encontrar alguém para executar o serviço?</p>
+  <p class="destaque">Chegou a hora de mudar isso!</p>
+  <p>Na Casa de Construtores, acreditamos que todo projeto merece uma oportunidade de acontecer. Queremos ser o elo entre sua necessidade e a solução que você procura.</p>
+  <p>Você apresenta sua ideia, explica o que precisa e nós ajudamos você a encontrar uma solução adequada para dar o próximo passo.</p>
+
+  <h2>Como funciona?</h2>
+  <ol>
+    <li><span class="destaque">Entre em contato:</span> conte para nós o que você precisa construir, reformar ou consertar.</li>
+    <li><span class="destaque">Apresente seu projeto:</span> explique os detalhes do serviço e suas necessidades.</li>
+    <li><span class="destaque">Encontre uma solução:</span> ajudamos você a encontrar profissionais e serviços adequados ao seu projeto.</li>
+    <li><span class="destaque">Tire seus planos do papel:</span> dê início à transformação que você deseja!</li>
+  </ol>
+
+  <h2>Não deixe seus planos apenas no papel!</h2>
+  <p>Uma casa melhor, um ambiente renovado, um comércio reformado ou uma construção do zero. Tudo começa com uma decisão: dar o primeiro passo.</p>
+  <p>A Casa de Construtores está aqui para ajudar você nessa jornada.</p>
+  <p>Não importa se é um pequeno reparo ou uma grande construção. Seu projeto é importante e merece atenção!</p>
+
+  <hr>
+
+  <section class="final">
+    <h2>CASA DE CONSTRUTORES</h2>
+    <p>Construindo possibilidades, realizando projetos e conectando você às soluções certas.</p>
+
+    <a class="btnO" href="contato.html">Solicitar orçamento</a>
+  </section>
+
+</main>
+</body>
+</html>
