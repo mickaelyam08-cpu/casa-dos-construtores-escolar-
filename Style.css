@@ -1,0 +1,425 @@
+:root {
+  --cc-preto: #171a16;
+  --cc-preto-2: #22271f;
+  --cc-lima: #c8ff00;
+  --cc-lima-hover: #dcff55;
+  --cc-verde: #647a20;
+  --cc-papel: #f7f8f4;
+  --cc-texto: #292d27;
+  --cc-cinza: #60665b;  /* texto secundário em fundo claro */
+  --cc-claro: #d1d5cb;  /* texto secundário em fundo escuro */
+  --cc-linha: #e5e8df;
+  --cc-sombra: 0 10px 30px rgba(0,0,0,.07);
+
+  --bs-body-font-family: Arial, Helvetica, sans-serif;
+  --bs-body-bg: var(--cc-papel);
+  --bs-body-color: var(--cc-texto);
+  --bs-body-line-height: 1.7;
+  --bs-link-color: var(--cc-verde);
+}
+
+/* ===== GERAL ===== */
+/* box-sizing, scroll suave e fonte/cor do body já vêm do Bootstrap */
+
+img {
+  max-width: 100%;
+}
+
+a {
+  transition: .3s;
+}
+
+a:focus-visible,
+button:focus-visible {
+  outline: 3px solid var(--cc-lima);
+  outline-offset: 4px;
+}
+
+/* ===== MENU ===== */
+
+.navbar {
+  background: var(--cc-preto);
+  padding: 1rem 0;
+  box-shadow: 0 4px 20px rgba(0,0,0,.12);
+}
+
+.navbar-brand img {
+  height: 48px;
+  width: auto;
+}
+
+.navbar .nav-link {
+  color: var(--cc-claro);
+  font-size: .78rem;
+  font-weight: 700;
+  letter-spacing: .12em;
+  text-transform: uppercase;
+  padding: .75rem 1rem;
+}
+
+.navbar .nav-link:hover,
+.navbar .nav-link.active {
+  color: var(--cc-lima);
+}
+
+@media (max-width: 767.98px) {
+  .navbar .nav-link {
+    padding: .8rem 0;
+  }
+
+  .navbar .btn {
+    margin: .5rem 0;
+  }
+}
+
+/* ===== BOTÕES ===== */
+
+.btn-lima,
+.btn-cc,
+.btn-contorno {
+  border-radius: 5px;
+  padding: .85rem 1.8rem;
+  font-weight: 700;
+  letter-spacing: .04em;
+  transition: .3s;
+}
+
+.btn-lima {
+  background: var(--cc-lima);
+  color: var(--cc-preto);
+  border: 2px solid var(--cc-lima);
+}
+
+.btn-lima:hover {
+  background: var(--cc-lima-hover);
+  border-color: var(--cc-lima-hover);
+  color: var(--cc-preto);
+  transform: translateY(-3px);
+  box-shadow: 0 8px 20px rgba(200,255,0,.2);
+}
+
+.btn-cc {
+  background: var(--cc-preto);
+  color: var(--cc-lima);
+  border: 2px solid var(--cc-preto);
+}
+
+.btn-cc:hover {
+  background: var(--cc-preto-2);
+  color: var(--cc-lima);
+  transform: translateY(-3px);
+}
+
+.btn-contorno {
+  background: transparent;
+  border: 2px solid white;
+  color: white;
+}
+
+.btn-contorno:hover {
+  background: white;
+  color: var(--cc-preto);
+}
+
+.btn-sm.btn-lima {
+  padding: .5rem 1rem;
+}
+
+/* ===== ABERTURA / HERO ===== */
+
+.hero {
+  background: linear-gradient(110deg, rgba(15,18,14,.98), rgba(23,26,22,.85));
+  color: white;
+  padding: 5rem 0;
+  overflow: hidden;
+}
+
+.hero h1 {
+  font-size: clamp(2.3rem, 5.5vw, 4.3rem);
+  font-weight: 800;
+  line-height: 1.08;
+  letter-spacing: -.04em;
+  margin-bottom: 1.5rem;
+}
+
+.hero h1 span {
+  color: var(--cc-lima);
+}
+
+.hero .lead {
+  color: var(--cc-claro);
+  font-size: 1.1rem;
+  max-width: 48ch;
+  line-height: 1.8;
+}
+
+.hero img {
+  width: 100%;
+  height: auto;
+  border-radius: 14px;
+  box-shadow: 0 20px 50px rgba(0,0,0,.3);
+  transition: .3s;
+}
+
+.hero img:hover {
+  transform: scale(1.02);
+}
+
+/* ===== FAIXA DE INFORMAÇÕES ===== */
+
+.faixa {
+  background: white;
+  border-block: 1px solid var(--cc-linha);
+  padding: 1.5rem 0;
+}
+
+.info-item {
+  border-left: 4px solid var(--cc-lima);
+  padding: .5rem 0 .5rem 1.2rem;
+}
+
+.info-item strong {
+  display: block;
+  font-size: 1.05rem;
+  color: var(--cc-preto);
+}
+
+.info-item span {
+  color: var(--cc-cinza);
+  font-size: .9rem;
+}
+
+/* ===== SEÇÕES ===== */
+
+.secao {
+  padding: 5rem 0;
+}
+
+.secao h2 {
+  font-size: clamp(1.8rem, 4vw, 2.7rem);
+  font-weight: 800;
+  letter-spacing: -.03em;
+  margin-bottom: 1.3rem;
+  color: var(--cc-preto);
+}
+
+.secao h2 span {
+  color: var(--cc-verde);
+}
+
+.texto {
+  max-width: 70ch;
+  color: var(--cc-cinza);
+}
+
+/* ===== SERVIÇOS ===== */
+
+.servico {
+  background: white;
+  border: 1px solid var(--cc-linha);
+  border-radius: 10px;
+  padding: 1.5rem;
+  height: 100%;
+  transition: .3s;
+}
+
+.servico:hover {
+  transform: translateY(-7px);
+  border-color: var(--cc-lima);
+  box-shadow: var(--cc-sombra);
+}
+
+.servico h3 {
+  font-size: 1.2rem;
+  font-weight: 800;
+  color: var(--cc-preto);
+  margin-bottom: .7rem;
+}
+
+/* ===== DIFERENCIAIS ===== */
+
+.diferenciais dt {
+  color: var(--cc-preto);
+  font-weight: 800;
+  margin-bottom: .3rem;
+}
+
+.diferenciais dd {
+  color: var(--cc-cinza);
+  margin-bottom: 1.5rem;
+}
+
+/* ===== ETAPAS ===== */
+
+.passo-num {
+  flex: 0 0 auto;
+  width: 3rem;
+  height: 3rem;
+  border-radius: 50%;
+  background: var(--cc-preto);
+  color: var(--cc-lima);
+  display: grid;
+  place-items: center;
+  font-weight: 800;
+  font-size: 1.1rem;
+  border: 2px solid var(--cc-lima);
+}
+
+/* ===== CHAMADA FINAL ===== */
+
+.final {
+  background: var(--cc-preto);
+  color: white;
+  text-align: center;
+  padding: 4.5rem 1rem;
+}
+
+.final h2 {
+  color: white;
+  font-size: clamp(1.8rem, 4vw, 2.8rem);
+  font-weight: 800;
+}
+
+.final p {
+  color: var(--cc-claro);
+}
+
+/* ===== PÁGINA SOBRE ===== */
+
+.pagina {
+  max-width: 800px;
+  margin: auto;
+}
+
+.pagina h1 {
+  color: var(--cc-preto);
+  font-size: clamp(2rem, 5vw, 3rem);
+  font-weight: 800;
+  margin-bottom: 1.5rem;
+}
+
+.frase {
+  font-style: italic;
+  color: var(--cc-cinza);
+  border-left: 4px solid var(--cc-lima);
+  padding: 1rem 1.3rem;
+  margin-bottom: 2rem;
+  background: white;
+}
+
+.virada {
+  font-size: clamp(1.2rem, 4vw, 1.5rem);
+  font-weight: 800;
+  color: var(--cc-verde);
+  margin: 2.5rem 0;
+}
+
+.conquista {
+  padding: 1.5rem;
+  background: white;
+  border: 1px solid var(--cc-linha);
+  border-left: 5px solid var(--cc-lima);
+  border-radius: 8px;
+  font-weight: 700;
+  box-shadow: var(--cc-sombra);
+}
+
+.assinatura {
+  text-align: center;
+  font-style: italic;
+  font-size: 1.2rem;
+  border-top: 1px solid var(--cc-linha);
+  padding-top: 2rem;
+  margin-top: 2.5rem;
+}
+
+/* ===== FORMULÁRIO ===== */
+
+.card-form {
+  background: white;
+  border: 1px solid var(--cc-linha);
+  border-radius: 12px;
+  box-shadow: var(--cc-sombra);
+  padding: 2.5rem;
+}
+
+.card-form h2 {
+  color: var(--cc-preto);
+  font-weight: 800;
+}
+
+.form-label {
+  font-weight: 700;
+  color: var(--cc-preto);
+  margin-top: .5rem;
+}
+
+.form-control,
+.form-select {
+  min-height: 50px;
+  border: 1px solid #d6dacf;
+  border-radius: 7px;
+  background-color: #fcfcfa;
+}
+
+.form-control:focus,
+.form-select:focus {
+  border-color: var(--cc-verde);
+  box-shadow: 0 0 0 .22rem rgba(100,122,32,.15);
+  background: white;
+}
+
+textarea.form-control {
+  min-height: 140px;
+  resize: none;
+}
+
+.card-form .btn {
+  width: 100%;
+  min-height: 50px;
+  margin-top: 1.5rem;
+}
+
+/* ===== RODAPÉ ===== */
+
+footer {
+  background: #111410;
+  color: var(--cc-claro);
+  font-size: .9rem;
+  padding: 2.5rem 0;
+}
+
+footer a {
+  color: var(--cc-lima);
+  text-decoration: none;
+}
+
+footer a:hover {
+  color: white;
+  text-decoration: underline;
+}
+
+/* ===== ANIMAÇÕES ===== */
+
+@keyframes aparecer {
+  from {
+    opacity: 0;
+    transform: translateY(20px);
+  }
+}
+
+/* "backwards" (e não "both"): não trava o transform depois da animação,
+   senão o hover dos botões do hero não funciona */
+.hero h1,
+.hero .lead,
+.hero .btn {
+  animation: aparecer .8s ease backwards;
+}
+
+.hero .lead {
+  animation-delay: .15s;
+}
+
+.hero .btn {
+  animation-delay: .3s;
+}
